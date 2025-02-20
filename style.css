@@ -1,0 +1,209 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clock {
+    height: 500px;
+    width: 500px;
+    border: 10px solid black;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: bisque;
+}
+
+.point {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(83, 83, 83);
+    position: absolute;
+    top: 245px;
+    left: 245px;
+    z-index: 1;
+}
+
+.hours {
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+}
+
+#hour1 {
+    left: 70%;
+    top: 7%;
+}
+
+#hour2 {
+    left: 87.5%;
+    top: 24%;
+}
+
+#hour3 {
+    left: 93%;
+    top: 46%;
+}
+
+#hour4 {
+    left: 86.5%;
+    top: 69%;
+}
+
+#hour5 {
+    left: 70%;
+    top: 85%;
+}
+
+#hour6 {
+    left: 48%;
+    top: 91.5%;
+}
+
+#hour7 {
+    left: 26%;
+    top: 85.5%;
+}
+
+#hour8 {
+    left: 8%;
+    top: 67%;
+}
+
+#hour9 {
+    left: 3%;
+    top: 46%;
+}
+
+#hour10 {
+    left: 7%;
+    top: 24%;
+}
+
+#hour11 {
+    left: 24%;
+    top: 7%;
+}
+
+#hour12 {
+    left: 46%;
+    top: 1%;
+}
+
+.company {
+    font-weight: 900;
+    font-size: larger;
+    position: absolute;
+    top: 40%;
+    left: 41%;
+}
+
+.minuteHandWrapper {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.minuteHand {
+    position: relative;
+}
+
+.minuteHand .hand {
+    position: absolute;
+    height: 200px;
+    width: 5px;
+    left: 49.3%;
+    background-color: black;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.minuteHand .arrow {
+    transform: rotate(180deg);
+    position: absolute;
+    left: 48.3%;
+    font-weight: bolder;
+    font-size: larger;
+    top: -6px;
+    z-index: 1;
+}
+
+.secondHandWrapper {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /* transform: rotate(180deg); */
+}
+
+.secondHand {
+    position: relative;
+}
+
+.secondHand .hand {
+    position: absolute;
+    height: 175px;
+    width: 5px;
+    left: 49.3%;
+    top: 25px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.secondHand .arrow {
+    transform: rotate(180deg);
+    position: absolute;
+    left: 48.3%;
+    font-weight: bolder;
+    color: red;
+    font-size: larger;
+    top: 17px;
+}
+
+.hourHandWrapper {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /* transform: rotate(270deg); */
+}
+
+.hourHand {
+    position: relative;
+}
+
+.hourHand .hand {
+    position: absolute;
+    height: 150px;
+    width: 5px;
+    left: 49.3%;
+    top: 47px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.hourHand .arrow {
+    transform: rotate(180deg);
+    position: absolute;
+    left: 48.3%;
+    font-weight: bolder;    
+    font-size: larger;
+    top: 40px;
+}
